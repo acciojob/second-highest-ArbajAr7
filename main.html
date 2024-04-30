@@ -14,14 +14,12 @@
 			{
 			    return -Infinity;
 			}
-			arr.sort();
+			arr.sort((a, b) => a - b);
 			let max = arr[arr.length - 1];
-			let count = 0;
 			for(let i = arr.length-2;i>=0;i--)
 			{
 			    if(max != arr[i])
 			    {
-			        count +=1;
 			        return arr[i]
 			    }
 			    
